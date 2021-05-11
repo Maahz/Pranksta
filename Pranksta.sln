@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pranksta", "Pranksta.csproj", "{BBE2CD99-93D1-4115-BEFB-237CECC6B38F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBE2CD99-93D1-4115-BEFB-237CECC6B38F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE2CD99-93D1-4115-BEFB-237CECC6B38F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE2CD99-93D1-4115-BEFB-237CECC6B38F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE2CD99-93D1-4115-BEFB-237CECC6B38F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C70F2DE-B577-4826-971C-33D8D37739E4}
+	EndGlobalSection
+EndGlobal
