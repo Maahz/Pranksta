@@ -4,8 +4,11 @@ using System.Windows.Forms;
 
 namespace Pranksta
 {
+
+    
     public static class Setup
     {
+        //Make it easy to conf
         public const int SPEED_CAP = 10;
         public const double MULTIPLR_INCR = .05;
         public static double multiplier = 1.0;
@@ -14,12 +17,13 @@ namespace Pranksta
     class Program
     {
 
-        
-
         static void Main(string[] args)
         {
+            //Create own thread so that its easier to stop
             Thread pranka = new Thread(new ThreadStart(PrankMe));
             pranka.Start();
+
+            //Close
             Console.ReadLine();
             pranka.Abort();
         }
@@ -28,8 +32,8 @@ namespace Pranksta
         {
             //What to write
             char[] key = {'C','o','m','e',' ','t','o',' ','m', 'e','!'};
-
             int i = 0;
+
             int loopCount = 0;
 
             Random rand = new Random();
@@ -45,11 +49,10 @@ namespace Pranksta
                 }
                 else
                 {
-
-
                     //Avoid out of bounds
                     try
                     {
+                        //You can use SendKeys to write it to any window...but for now...we write to console.
                         //SendKeys.SendWait(key[i].ToString());
                         Console.Write(key[i].ToString());
 
@@ -66,7 +69,8 @@ namespace Pranksta
                         i = 0;
                     }
 
-                    Thread.Sleep(rand.Next(100, 500) / (int)Setup.multiplier);  //Unfortunately Thread.Sleep cant take decimals
+                    Thread.Sleep(rand.Next(100, 500) / (int)Setup.multiplier);  //Unfortunately Thread.Sleep cant take decimals.
+                                                                                //Would be nice to speed it up more gradually.
                 }
             }
         }
